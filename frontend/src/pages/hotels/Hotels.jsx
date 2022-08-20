@@ -36,7 +36,7 @@ const Hotels = () => {
       <Header type="smallHeader" />
       <div className="hotelsContainer">
         <div className="hotelsRow">
-          <div className="hotelsCol">
+          {/* <div className="hotelsCol">
             <div className="searchHotels">
               <div className="search">
                 <div className="searchItem">
@@ -118,7 +118,7 @@ const Hotels = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="hotelsCol">
             <div className="listHotels">
               {loading ? (
