@@ -17,7 +17,9 @@ const Hotel = () => {
   console.log(location);
   const id = location.pathname.split("/")[2];
 
-  const { data, loading, error, reFetch } = useFetch(`/api/hotels/find/${id}`);
+  const { data, loading, error, reFetch } = useFetch(
+    `http://localhost:5000/api/hotels/find/${id}`
+  );
   console.log(data);
 
   const { user } = useContext(AuthContext);
@@ -102,7 +104,7 @@ const Hotel = () => {
             </div>
             <div className="hotelCol">
               <button className="hotelBtn" onClick={handleClick}>
-                Booking Now
+                Book Now!
               </button>
             </div>
           </div>

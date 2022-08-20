@@ -4,7 +4,9 @@ import useFetch from "../../hooks/useFetch";
 import "./propertytype.css";
 
 const PropertyType = () => {
-  const { data, loading, error } = useFetch("api/hotels/bytype");
+  const { data, loading, error } = useFetch(
+    "http://localhost:5000/api/hotels/bytype"
+  );
   console.log(data);
 
   const images = [

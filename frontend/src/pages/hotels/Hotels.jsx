@@ -21,7 +21,9 @@ const Hotels = () => {
   const [max, setMax] = useState(undefined);
 
   const { data, loading, error, reFetch } = useFetch(
-    `api/hotels?city=${destination}&min=${min || 0}&max=${max || 9999}`
+    `http://localhost:5000/api/hotels?city=${destination}&min=${min || 0}&max=${
+      max || 9999
+    }`
   );
   console.log(data);
 
@@ -46,8 +48,8 @@ const Hotels = () => {
                   <label>Check-in Date</label>
                   <label onClick={() => setOpenDate(!openDate)}>{`${format(
                     date[0].startDate,
-                    "MM/dd/yyyy"
-                  )} to ${format(date[0].endDate, "MM/dd/yyyy")}`}</label>
+                    "dd/MM/yyyy"
+                  )} to ${format(date[0].endDate, "dd/MM/yyyy")}`}</label>
                   {openDate && (
                     <DateRange
                       onChange={(item) => setDate([item.selection])}

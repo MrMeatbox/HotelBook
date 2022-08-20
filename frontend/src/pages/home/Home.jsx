@@ -1,12 +1,12 @@
-import React from 'react'
-import City from '../../components/city/City'
-import GridImages from '../../components/gridImages/GridImages'
-import Header from '../../components/header/Header'
-import PropertyType from '../../components/propertyType/PropertyType'
-import Tops from '../../components/Tops/Tops'
-import Subscribe from '../../components/subscribe/Subscribe'
-import Footer from '../../components/footer/Footer'
-import './home.css'
+import React from "react";
+import City from "../../components/city/City";
+import GridImages from "../../components/gridImages/GridImages";
+import Header from "../../components/header/Header";
+import PropertyType from "../../components/propertyType/PropertyType";
+import Tops from "../../components/Tops/Tops";
+import Subscribe from "../../components/subscribe/Subscribe";
+import Footer from "../../components/footer/Footer";
+import "./home.css";
 
 const Home = () => {
   return (
@@ -15,13 +15,13 @@ const Home = () => {
       <div className="main-container">
         <City />
         <PropertyType />
-        <Tops />
+        {/* <Tops /> */}
         <GridImages />
         <Subscribe />
         <Footer />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

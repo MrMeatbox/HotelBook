@@ -1,10 +1,10 @@
-import React from 'react'
-import './footer.css'
-import {Link} from 'react-router-dom'
+import React from "react";
+import "./footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className='footer'>
+    <div className="footer">
       <div className="footerRow">
         <div className="footerCol">
           <ul>
@@ -81,12 +81,14 @@ const Footer = () => {
         </div>
       </div>
       <div className="footerRow">
-          <div className="footerCol">
-              <p className="copyrights">&copy; 2022. All Rights Reserved. Powered By Miljan Peric</p>
-          </div>
+        <div className="footerCol">
+          <p className="copyrights">
+            &copy; 2022. All Rights Reserved. Powered By MrMeatbox, CUET
+          </p>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
